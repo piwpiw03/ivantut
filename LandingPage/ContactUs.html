@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="icon" href="src/images/images.png">
+  <Link rel="Stylesheet" href="style.css">
+  </head>
+<body>
+  <nav>
+    <div class="container">
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Initiatives.html">Initiatives</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+        <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <section class="contact-us">
+    <h2>Contact Us</h2>
+    <p>Feel free to get in touch with us for inquiries, partnerships, or any questions you may have.</p>
+    <form action="submit_contact_form.php" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+</body>
+</html>

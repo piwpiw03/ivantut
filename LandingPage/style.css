@@ -1,0 +1,237 @@
+:root {
+  --primary-color: #2a764a;
+  --secondary-color: #d44d4d;
+  --text-color: #030000;
+  --background-image-url: url('src/images/Natures.png');
+  --about-background-image-url: url('src/images/Natures1.png');
+  --initiatives-background-image-url: url('src/images/Natures2.png');
+  --contact-us-background-image-url: url('src/images/Natures3.png');
+  --header-height: 80px;
+  --footer-height: 60px;
+  --sidebar-width: 250px;
+  --border-radius: 10px;
+  --transition-duration: 0.3s;
+  --font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  background-image: var(--background-image-url);
+  background-size: cover;
+  background-position: center;
+  color: #FFFFFF;
+  transition: background-image var(--transition-duration);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color var(--transition-duration);
+}
+
+nav ul li a:hover {
+  color: var(--secondary-color);
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 5px 0;
+  text-align: center;
+  background-size: cover;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: transform var(--transition-duration);
+}
+
+.hero:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  color: var(--text-color);
+}
+
+h1 {
+  color: var(--text-color);
+  margin-top: 10px;
+  font-size: 3em;
+  margin-bottom: 5px;
+  font-family: cursive;
+  transition: color var(--transition-duration);
+}
+
+p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  color: var(--text-color);
+  transition: color var(--transition-duration);
+}
+
+.initiatives, .gallery {
+  padding: 40px 0;
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  margin-top: 1px;
+  color: var(--text-color);
+  transition: color var(--transition-duration);
+}
+
+nav {
+  background-color: var(--primary-color);
+  padding: 20px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.about1 {
+  background-image: var(--about-background-image-url);
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  color: rgb(4, 10, 4);
+  height: 110vh;
+}
+
+.initiatives1 {
+  background-image: var(--initiatives-background-image-url);
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  color: rgb(4, 10, 4);
+  height: 100vh;
+}
+
+.contact-us {
+  background-image: var(--contact-us-background-image-url);
+  padding: 40px;
+  background-size: cover;
+  background-position: center;
+  color: rgb(4, 10, 4);
+  height: 100vh;
+  justify-content: center;
+}
+
+.contact-us input[type="text"],
+.contact-us input[type="email"],
+.contact-us textarea {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  resize: vertical;
+}
+
+.contact-us button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color var(--transition-duration);
+}
+
+.contact-us button:hover {
+  background-color: #45a049;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: calc(33.33% - 20px);
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform var(--transition-duration);
+  margin-top: 100px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+
+}
+
+.gallery1 {
+  background-image: url(src/images/Natures4.png);
+  background-size: cover; 
+  background-position: center;
+  height: 100vh;
+}
+
+.Gal {
+  background-color: #85df62;
+  border-color: #98da72;
+  border-style: solid;
+  border-width: 5px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 2px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.caption {
+  background-color: #333;
+  color: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.caption h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.caption h3::before {
+  font-weight: normal;
+  font-size: 16px;
+}
+
